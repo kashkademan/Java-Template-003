@@ -26,4 +26,25 @@ public class NumericOperationsTest {
         // assertEquals(expected, numericOperations.add(a, b));
         Assertions.assertEquals(expected, numericOperations.add(a, b));
     }
+
+    @Test
+    public void testContainsElement() {
+        int[] input = {1, 4, 5, 9, 18};
+        int search = 18;
+        Assertions.assertTrue(numericOperations.containsElement(input, search));
+    }
+
+    @Test
+    public void testStringToInt() {
+        int i = 3;
+        String s = "5";
+        Assertions.assertEquals(i, numericOperations.stringToInt(s), "Should return the quotient of valid division");
+    }
+
+    @Test
+    public void testDivide() {
+        int a = 5;
+        int b = 0;
+        Assertions.assertThrows(IllegalArgumentException.class, () -> numericOperations.divide(a, b));
+    }
 }
