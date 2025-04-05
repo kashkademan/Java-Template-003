@@ -36,7 +36,7 @@ public class NumericOperationsTest {
 
     @Test
     public void testStringToInt() {
-        int i = 3;
+        int i = 5;
         String s = "5";
         Assertions.assertEquals(i, numericOperations.stringToInt(s), "Should return the quotient of valid division");
     }
