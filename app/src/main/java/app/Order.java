@@ -10,10 +10,10 @@ public class Order {
     private double discount;
     private double finalPrice;
 
-    public Order(List<Product> products, double discount) {
+    public Order(List<Product> products) {
         this.products = products;
-        calculateDiscount();
         calculateTotalPrice();
+        calculateDiscount();
         calculateFinalPrice();
     }
 

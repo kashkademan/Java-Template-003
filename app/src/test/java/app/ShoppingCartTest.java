@@ -6,7 +6,7 @@ public class ShoppingCartTest {
     private ShoppingCart cart;
     private Product product1;
     private Product product2;
-    private Product product3;
+    // private Product product3;
 
     @BeforeEach
     public void setUp() {
@@ -14,7 +14,7 @@ public class ShoppingCartTest {
         cart = new ShoppingCart();
         product1 = new Product("Product 1", 10.99);
         product2 = new Product("Product 2", 50.00);
-        product3 = new Product("Product 3", 70.99);
+        // product3 = new Product("Product 3", 70.99);
         cart.addProduct(product1);
     }
 
